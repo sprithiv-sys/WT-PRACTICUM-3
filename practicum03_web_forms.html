@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tasklane is a cloud-based project management app for teams.">
+  <title>Tasklane – Practicum 3: Web Forms</title>
+</head>
+
+<body>
+
+  <!-- PRACTICUM 3: Practicum 2 + registration form with HTML5 validation -->
+
+  <header class="site-header">
+    <a href="#home" class="logo">Tasklane</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Plan, track and ship work together in the cloud</h1>
+          <p>Tasklane is a cloud-based project management application that keeps tasks, files and conversations in one place, so your team always knows what comes next.</p>
+          <a href="#register" class="btn">Start 14-day free trial</a>
+          <a href="#pricing">See pricing</a>
+        </div>
+        <div class="hero-media">
+          <!-- Practicum 2: <img> with alt text (inline SVG used so no file is needed) -->
+          <img
+            src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Crect width='480' height='300' fill='%23f5f8fa'/%3E%3Crect width='480' height='36' fill='%2310212f'/%3E%3Ccircle cx='18' cy='18' r='6' fill='%23f2a33a'/%3E%3Crect x='16' y='56' width='140' height='224' rx='8' fill='%23d5dee5'/%3E%3Crect x='170' y='56' width='140' height='224' rx='8' fill='%23d5dee5'/%3E%3Crect x='324' y='56' width='140' height='224' rx='8' fill='%23d5dee5'/%3E%3Crect x='26' y='70' width='120' height='44' rx='6' fill='%23fff'/%3E%3Crect x='26' y='124' width='120' height='44' rx='6' fill='%23fff'/%3E%3Crect x='180' y='70' width='120' height='44' rx='6' fill='%230f766e'/%3E%3Crect x='334' y='70' width='120' height='44' rx='6' fill='%23f2a33a'/%3E%3Crect x='334' y='124' width='120' height='44' rx='6' fill='%23fff'/%3E%3C/svg%3E"
+            alt="Tasklane board view showing tasks arranged in three columns: To do, In progress and Done"
+            width="480" height="300">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES (Practicum 1: section + article + lists) ================= -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Application features</h2>
+        <p class="lead">Everything a team needs to move from idea to delivery.</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Task boards</h3>
+            <p>Organise work visually and move tasks between stages.</p>
+            <ul>
+              <li>Kanban and list views</li>
+              <li>Due dates and priorities</li>
+              <li>Sub-tasks and checklists</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Team collaboration</h3>
+            <p>Keep every discussion attached to the work it belongs to.</p>
+            <ul>
+              <li>Comments and @mentions</li>
+              <li>Shared file storage</li>
+              <li>Real-time activity feed</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Reports and insights</h3>
+            <p>See progress and workload without building spreadsheets.</p>
+            <ul>
+              <li>Burndown and velocity charts</li>
+              <li>Workload by team member</li>
+              <li>Export to CSV and PDF</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Integrations and security</h3>
+            <p>Connect the tools you already use, with data protected.</p>
+            <ul>
+              <li>Works with Slack, Google Drive and GitHub</li>
+              <li>Single sign-on (SSO)</li>
+              <li>Daily encrypted backups</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BENEFITS ================= -->
+    <section id="benefits" class="section section-alt">
+      <div class="container">
+        <h2>Why teams choose Tasklane</h2>
+        <p class="lead">Real results from moving work into one shared workspace.</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Save time</h3>
+            <p>Automations remove repeat tasks, giving each person back up to five hours a week.</p>
+          </article>
+          <article class="card">
+            <h3>Work from anywhere</h3>
+            <p>Cloud access on desktop, tablet and phone means no installation and no VPN.</p>
+          </article>
+          <article class="card">
+            <h3>Scale on demand</h3>
+            <p>Add or remove users at any time. You only pay for the seats you use.</p>
+          </article>
+          <article class="card">
+            <h3>Stay secure</h3>
+            <p>Role-based access, audit logs and 99.9% uptime protect your projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICING TABLE (Practicum 1: tables) ================= -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2>Subscription plans and pricing</h2>
+        <p class="lead">Simple monthly pricing per user. Save 20% when you pay yearly.</p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Compare Tasklane subscription plans</caption>
+            <thead>
+              <tr>
+                <th scope="col">Features</th>
+                <th scope="col">Free</th>
+                <th scope="col" class="featured">Pro<span class="badge">Most popular</span></th>
+                <th scope="col">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Price per user / month</th>
+                <td class="price">$0</td>
+                <td class="price">$12</td>
+                <td class="price">$29</td>
+              </tr>
+              <tr>
+                <th scope="row">Projects</th>
+                <td>3</td><td>Unlimited</td><td>Unlimited</td>
+              </tr>
+              <tr>
+                <th scope="row">Team members</th>
+                <td>Up to 5</td><td>Up to 50</td><td>Unlimited</td>
+              </tr>
+              <tr>
+                <th scope="row">Storage</th>
+                <td>2 GB</td><td>100 GB</td><td>1 TB</td>
+              </tr>
+              <tr>
+                <th scope="row">Reports and analytics</th>
+                <td>Basic</td><td>Advanced</td><td>Advanced + custom</td>
+              </tr>
+              <tr>
+                <th scope="row">Single sign-on (SSO)</th>
+                <td>&ndash;</td><td>&ndash;</td><td>&#10003;</td>
+              </tr>
+              <tr>
+                <th scope="row">Support</th>
+                <td>Community</td><td>Email (24 h)</td><td>Phone + dedicated manager</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MULTIMEDIA (Practicum 2) ================= -->
+    <section id="demo" class="section section-alt">
+      <div class="container">
+        <h2>See Tasklane in action</h2>
+        <p class="lead">Watch the tour, listen to a customer story, and find our office.</p>
+
+        <div class="media-grid">
+          <figure>
+            <video controls preload="metadata" width="480">
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Product tour: creating a project and inviting your team.</figcaption>
+          </figure>
+
+          <figure>
+            <audio controls preload="none">
+              <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <figcaption>Customer story: how a design agency cut project delays in half.</figcaption>
+          </figure>
+
+          <figure>
+            <iframe
+              title="Map showing the Tasklane office in Coimbatore"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=76.93%2C10.98%2C77.05%2C11.06&amp;layer=mapnik"
+              loading="lazy"></iframe>
+            <figcaption>Visit our office in Coimbatore, Tamil Nadu.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REGISTRATION FORM (Practicum 3) ================= -->
+    <section id="register" class="section">
+      <div class="container">
+        <h2>Create your free account</h2>
+        <p class="lead">No credit card needed. Fields marked * are required.</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+          <fieldset>
+            <legend>Account details</legend>
+
+            <div class="row">
+              <div class="field">
+                <label for="fullname">Full name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g. Anita Raman"
+                       required minlength="3" maxlength="60" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="email">Work email *</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com"
+                       required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="field">
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password"
+                       required minlength="8"
+                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                       title="At least 8 characters with one uppercase letter, one lowercase letter and one number"
+                       autocomplete="new-password">
+                <small>8+ characters, with upper case, lower case and a number.</small>
+              </div>
+              <div class="field">
+                <label for="dob">Date of birth *</label>
+                <input type="date" id="dob" name="dob" required max="2008-11-03">
+                <small>You must be 18 or older.</small>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your team</legend>
+
+            <div class="row">
+              <div class="field">
+                <label for="company">Company name</label>
+                <input type="text" id="company" name="company" maxlength="80">
+              </div>
+              <div class="field">
+                <label for="seats">Number of users *</label>
+                <input type="number" id="seats" name="seats" min="1" max="500" value="5" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="role">Your role *</label>
+              <select id="role" name="role" required>
+                <option value="">-- Select your role --</option>
+                <option value="manager">Project manager</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="founder">Founder / Executive</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Plan and preferences</legend>
+
+            <div class="field">
+              <span><strong>Choose a plan *</strong></span><br>
+              <label class="inline"><input type="radio" name="plan" value="free" required> Free</label>
+              <label class="inline"><input type="radio" name="plan" value="pro" checked> Pro ($12)</label>
+              <label class="inline"><input type="radio" name="plan" value="enterprise"> Enterprise ($29)</label>
+            </div>
+
+            <div class="field">
+              <span><strong>Interested in</strong></span><br>
+              <label class="inline"><input type="checkbox" name="interest" value="boards"> Task boards</label>
+              <label class="inline"><input type="checkbox" name="interest" value="reports"> Reports</label>
+              <label class="inline"><input type="checkbox" name="interest" value="integrations"> Integrations</label>
+            </div>
+
+            <div class="field">
+              <label for="needs">Tell us about your project needs</label>
+              <textarea id="needs" name="needs" rows="4" maxlength="500"
+                        placeholder="What would you like Tasklane to help you manage?"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="logo">Upload company logo (optional)</label>
+              <input type="file" id="logo" name="logo" accept="image/png, image/jpeg">
+            </div>
+
+            <div class="field">
+              <label class="inline">
+                <input type="checkbox" name="terms" required>
+                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> *
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-submit">Create account</button>
+            <button type="reset" class="btn btn-reset">Clear form</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <section>
+          <h3>Tasklane</h3>
+          <p>Cloud project management for teams that want to ship on time.</p>
+        </section>
+        <nav aria-label="Footer navigation">
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#register">Sign up</a></li>
+          </ul>
+        </nav>
+        <address>
+          <h3>Contact</h3>
+          <p>
+            Tasklane Technologies<br>
+            Coimbatore, Tamil Nadu, India<br>
+            <a href="mailto:hello@tasklane.example">hello@tasklane.example</a>
+          </p>
+        </address>
+      </div>
+      <p class="copyright">&copy; 2026 Tasklane Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
